@@ -1,4 +1,4 @@
-package ru.otus.homework.homework02;
+package ru.otus.homework.hw01;
 
 import java.util.Base64;
 import java.util.Scanner;
