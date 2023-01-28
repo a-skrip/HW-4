@@ -7,7 +7,7 @@ public class HomeworkTemplate {
         int correctCount = 0, wrongCount = 0;
         String[] questions = {"В файл с каким расширением компилируется java-файл?",
                 "С помощью какой команды git можно получить полную копию удаленного репозитория?",
-                "Какой цикл применяется, когда не известно количество итераций?"};
+                "Какой цикл применяется, когда не известно количествO итераций?"};
         String[][] answerOptions = {{"cs", "java", "class", "exe"}, {"commit", "push", "clone", "copy"},
                 {"while", "for", "loop"}};
         int[] correctAnswers = {2, 3, 1};
