@@ -13,12 +13,17 @@ public class HomeworkTemplate {
         int[] correctAnswers = {2, 3, 1};
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < questions.length; i++) {
+            int numAnswer = 1;
             System.out.println(questions[i]);
-            for (int j = 0; j < answerOptions[i].length; j++) {
-                System.out.print(j + 1 + ". ");
-                System.out.println(answerOptions[i][j]);
+            for (String answ : answerOptions[i]) {
+                System.out.println(numAnswer++ + ". " + answ);
             }
             System.out.print("Ваш ответ: ");
+
+            while (!scanner.hasNextInt()) {
+                System.out.println("Введите число");
+                scanner.next();
+            }
             int result = scanner.nextInt();
             if (result == correctAnswers[i]) {
                 System.out.println("правильно");
